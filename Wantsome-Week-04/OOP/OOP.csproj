@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Classes\Dog.cs" />
     <Compile Include="Classes\Human.cs" />
+    <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

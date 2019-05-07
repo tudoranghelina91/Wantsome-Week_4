@@ -32,6 +32,36 @@ namespace OOP
             myHuman.Print();
             myHuman2.Print();
             Console.ReadKey();
+
+            Human[] omusteni = new Human[]
+            {
+                new Human("Adam", "Primul Om", "Male", 1),
+                new Human("Eva", "Prima Femeie", "Female", 1),
+                new Human ("Cain", "Din Adam si Eva", "Male", 0),
+                new Human ("Abel", "Din Adam si Eva", "Male", 0)
+            };
+
+            Human omusteanulsuprem = new Human("Gigi", "Calaul", "Mascul Feroce", 14);
+            omusteanulsuprem.Print();
+            Console.WriteLine("Inainte de setarea inaltimii: {0}m", omusteanulsuprem.Height);
+            omusteanulsuprem.Height = 1.67M;
+
+            Console.WriteLine("Dupa setarea inaltimii: {0}m", omusteanulsuprem.Height);
+
+            foreach (Human omustean in omusteni)
+            {
+                omustean.Print();
+            }
+
+            Console.ReadKey();
+
+            Point x = new Point(5, 7);
+            Point y = new Point(12, 8);
+            Point p = new Point(6, 9);
+
+            Console.WriteLine(p.CalcDistance(x));
+
+            Console.ReadKey();
         }
     }
 }

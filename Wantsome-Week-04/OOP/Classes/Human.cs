@@ -13,6 +13,35 @@ namespace OOP.Classes
         readonly string gender;
         readonly int age;
 
+        private DateTime dateOfBirth;
+        private decimal height;
+
+        public decimal Height
+        {
+            get
+            {
+                return height;
+            }
+
+            set
+            {
+                height = value;
+            }
+        }
+
+        public DateTime DateOfBirth
+        {
+            get
+            {
+                return dateOfBirth;
+            }
+
+            set
+            {
+                dateOfBirth = value;
+            }
+        }
+
         public Human(string firstName, string lastName, string gender, int age)
         {
             this.firstName = firstName;
