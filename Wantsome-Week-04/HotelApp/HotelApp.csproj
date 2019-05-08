@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A14D48BA-4026-4582-9116-51DF0604A129}</ProjectGuid>
+    <ProjectGuid>{F1E75139-4575-46E1-A99F-E26C1A85963E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>WantsomeWeek04</RootNamespace>
-    <AssemblyName>WantsomeWeek04</AssemblyName>
+    <RootNamespace>HotelApp</RootNamespace>
+    <AssemblyName>HotelApp</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,14 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Handlers\InputHandling.cs" />
-    <Compile Include="Handlers\OutputHandling.cs" />
-    <Compile Include="Handlers\ProgramFlowHandling.cs" />
+    <Compile Include="Classes\Hotel.cs" />
+    <Compile Include="Classes\Rate.cs" />
+    <Compile Include="Classes\Room.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wantsome-Week-04\Wantsome-Week-04.csproj">
+      <Project>{a14d48ba-4026-4582-9116-51df0604a129}</Project>
+      <Name>Wantsome-Week-04</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
