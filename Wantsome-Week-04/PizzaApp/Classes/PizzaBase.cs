@@ -8,13 +8,13 @@ using Wantsome_Week_04.Handlers;
 
 namespace PizzaApp.Classes
 {
-    class PizzaBase
+    public class PizzaBase
     {
-        public string Name { get; set; }
+        string Name { get; set; }
         public decimal Cost { get; set; }
         string price = "";
 
-        PizzaBase(string name, decimal cost)
+        public PizzaBase(string name, decimal cost)
         {
             Name = name;
             Cost = (Name != "Italian") ? cost : cost * 1.5m;

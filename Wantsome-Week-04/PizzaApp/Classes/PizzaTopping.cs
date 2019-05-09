@@ -8,21 +8,21 @@ using Wantsome_Week_04.Handlers;
 
 namespace PizzaApp.Classes
 {
-    class PizzaTopping
+    public class PizzaTopping
     {
 
         public string Name { get; set; }
         public decimal Cost { get; set; }
         string price = "";
 
-        PizzaTopping(string name, decimal cost)
+        public PizzaTopping(string name, decimal cost)
         {
             Name = name;
             Cost = cost;
             price = Cost.ToString("C2", CultureInfo.CurrentCulture);
         }
 
-        void Print()
+        public void Print()
         {
             OutputHandling.Message($"{Name} ({price})");
         }
