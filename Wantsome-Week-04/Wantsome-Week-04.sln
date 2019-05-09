@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wantsome-Week-04", "Wantsom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelApp", "HotelApp\HotelApp.csproj", "{F1E75139-4575-46E1-A99F-E26C1A85963E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaApp", "PizzaApp\PizzaApp.csproj", "{EEC0C904-0EA2-498E-8A36-815752E98308}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F1E75139-4575-46E1-A99F-E26C1A85963E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1E75139-4575-46E1-A99F-E26C1A85963E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1E75139-4575-46E1-A99F-E26C1A85963E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEC0C904-0EA2-498E-8A36-815752E98308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC0C904-0EA2-498E-8A36-815752E98308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC0C904-0EA2-498E-8A36-815752E98308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC0C904-0EA2-498E-8A36-815752E98308}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

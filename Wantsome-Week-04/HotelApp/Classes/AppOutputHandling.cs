@@ -13,7 +13,7 @@ namespace HotelApp.Classes
         {
             Console.WriteLine("Welcome to Hotel Administration App");
             Console.WriteLine("1. Add Hotel");
-            Console.WriteLine("2. Find a room");
+            Console.WriteLine("2. Find a Room");
             Console.WriteLine("3. Delete a hotel");
             Console.WriteLine("4. Exit");
         }
