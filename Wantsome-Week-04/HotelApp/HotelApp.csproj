@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\AppFlowHandling.cs" />
+    <Compile Include="Classes\AppInputHandling.cs" />
+    <Compile Include="Classes\AppOutputHandling.cs" />
     <Compile Include="Classes\Hotel.cs" />
     <Compile Include="Classes\HotelDatabaseOperations.cs" />
     <Compile Include="Classes\HotelInputHandling.cs" />

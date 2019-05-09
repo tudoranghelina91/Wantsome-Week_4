@@ -15,36 +15,25 @@ namespace HotelApp.Classes
         {
             string hotelName = HotelInputHandling.AddHotelName();
             string hotelCity = HotelInputHandling.AddHotelCity();
+
             Hotel hotel = new Hotel(hotelName, hotelCity);
             HotelInputHandling.AddHotelRooms(hotel);
             hotels.Add(hotel);
 
             OutputHandling.Message("The following hotel has been added!");
             hotel.Print();
-            // ENCAPSULATE THIS
-            OutputHandling.Message("Press any key to return to the main menu...", ConsoleColor.Green);
-            Console.ReadKey();
-            Console.Clear();
-            Program.MainMenu(hotels);
+            AppFlowHandling.ReturnToMainMenu(hotels);
         }
 
         public static void DeleteHotel(List<Hotel> hotels)
         {
-            // Encapsulate this
-            int hotelctr = 1;
-            foreach (Hotel hotel in hotels)
-            {
-                OutputHandling.Message($"{hotelctr}. {hotel.Name}");
-                hotelctr++;
-            }
-
-            // Encapsulate this
-            OutputHandling.Message("Type in the number of the hotel to delete: ");
+            AppOutputHandling.DisplayHotels(hotels);
             int hotelNumber = InputHandling.ReadValue("Type in the number of the hotel to delete: ");
 
-            if (hotelNumber > hotels.Count || hotelNumber < hotels.Count)
+            if (hotelNumber > hotels.Count || hotelNumber < 1)
             {
                 OutputHandling.Error("Invalid hotel ID!");
+                DeleteHotel(hotels);
             }
 
             else
@@ -53,7 +42,7 @@ namespace HotelApp.Classes
                 hotels.Remove(hotels[hotelNumber-1]);
             }
 
-            Program.MainMenu(hotels);
+            AppFlowHandling.ReturnToMainMenu(hotels);
         }
 
         public static void FindRoom(List<Hotel> hotels)
@@ -77,11 +66,7 @@ namespace HotelApp.Classes
             }
 
             OutputHandling.Message($"We found {roomcount} rooms that match your criteria!", ConsoleColor.Green);
-            // ENCAPSULATE THIS
-            OutputHandling.Message("Press any key to return to the main menu...", ConsoleColor.Green);
-            Console.ReadKey();
-            Console.Clear();
-            Program.MainMenu(hotels);
+            AppFlowHandling.ReturnToMainMenu(hotels);
         }
     }
 }

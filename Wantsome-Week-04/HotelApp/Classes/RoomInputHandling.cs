@@ -11,7 +11,7 @@ namespace HotelApp.Classes
     {
         public static string AddRoomName(int i = 0)
         {
-            string name = InputHandling.ReadString("Room Name: " + i, "Room Name cannot be empty");
+            string name = InputHandling.ReadString($"Room {i} Name: ");
             if (name == "")
             {
                 OutputHandling.Error("Room name cannot be empty!");
