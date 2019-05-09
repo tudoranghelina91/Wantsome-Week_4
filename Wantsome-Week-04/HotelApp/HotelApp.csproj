@@ -43,15 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\AppFlowHandling.cs" />
-    <Compile Include="Classes\AppInputHandling.cs" />
-    <Compile Include="Classes\AppOutputHandling.cs" />
+    <Compile Include="Classes\App Handling\AppFlowHandling.cs" />
+    <Compile Include="Classes\App Handling\AppInputHandling.cs" />
+    <Compile Include="Classes\App Handling\AppOutputHandling.cs" />
     <Compile Include="Classes\Hotel.cs" />
-    <Compile Include="Classes\HotelDatabaseOperations.cs" />
-    <Compile Include="Classes\HotelInputHandling.cs" />
+    <Compile Include="Classes\App Handling\DatabaseInputHandling\HotelDatabaseOperations.cs" />
+    <Compile Include="Classes\App Handling\DatabaseInputHandling\HotelInputHandling.cs" />
     <Compile Include="Classes\Rate.cs" />
     <Compile Include="Classes\Room.cs" />
-    <Compile Include="Classes\RoomInputHandling.cs" />
+    <Compile Include="Classes\App Handling\DatabaseInputHandling\RoomInputHandling.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,5 +64,6 @@
       <Name>Wantsome-Week-04</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

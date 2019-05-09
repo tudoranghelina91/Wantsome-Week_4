@@ -7,7 +7,7 @@ using HotelApp;
 using Wantsome_Week_04.Handlers;
 using HotelApp.Classes;
 
-namespace HotelApp.Classes
+namespace HotelApp.Classes.AppHandling
 {
     class AppInputHandling
     {

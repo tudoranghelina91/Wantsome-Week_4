@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Wantsome_Week_04.Handlers;
 
-namespace HotelApp.Classes
+namespace HotelApp.Classes.AppHandling.DatabaseInputHandling
 {
     class HotelInputHandling
     {

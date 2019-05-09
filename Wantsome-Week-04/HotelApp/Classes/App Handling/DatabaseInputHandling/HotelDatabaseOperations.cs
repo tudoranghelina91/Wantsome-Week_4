@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Wantsome_Week_04.Handlers;
-using HotelApp;
+using HotelApp.Classes.AppHandling.DatabaseInputHandling;
 
-namespace HotelApp.Classes
+namespace HotelApp.Classes.AppHandling
 {
 
     public class HotelDatabaseOperations
