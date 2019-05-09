@@ -11,12 +11,14 @@ namespace HotelApp
 
     class Program
     {
+        // Encapsulate this
         public static void MainMenu(List<Hotel> hotels)
         {
             Console.WriteLine("Welcome to Hotel Administration App");
             Console.WriteLine("1. Add Hotel");
             Console.WriteLine("2. Find a room");
-            Console.WriteLine("3. Exit");
+            Console.WriteLine("3. Delete a hotel");
+            Console.WriteLine("4. Exit");
 
             ConsoleKeyInfo cki = Console.ReadKey(true);
 
@@ -34,6 +36,12 @@ namespace HotelApp
             }
 
             else if (cki.Key.Equals(ConsoleKey.D3))
+            {
+                Console.Clear();
+                HotelDatabaseOperations.DeleteHotel(hotels);
+            }
+
+            else if (cki.Key.Equals(ConsoleKey.D4))
             {
                 OutputHandling.Message("Thank you for using Hotel Administration App!!! Press any key to exit...", ConsoleColor.Green);
                 Console.ReadKey();

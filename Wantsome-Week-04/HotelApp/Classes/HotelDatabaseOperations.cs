@@ -21,7 +21,7 @@ namespace HotelApp.Classes
 
             OutputHandling.Message("The following hotel has been added!");
             hotel.Print();
-
+            // ENCAPSULATE THIS
             OutputHandling.Message("Press any key to return to the main menu...", ConsoleColor.Green);
             Console.ReadKey();
             Console.Clear();
@@ -30,7 +30,30 @@ namespace HotelApp.Classes
 
         public static void DeleteHotel(List<Hotel> hotels)
         {
+            // Encapsulate this
+            int hotelctr = 1;
+            foreach (Hotel hotel in hotels)
+            {
+                OutputHandling.Message($"{hotelctr}. {hotel.Name}");
+                hotelctr++;
+            }
 
+            // Encapsulate this
+            OutputHandling.Message("Type in the number of the hotel to delete: ");
+            int hotelNumber = InputHandling.ReadValue("Type in the number of the hotel to delete: ");
+
+            if (hotelNumber > hotels.Count || hotelNumber < hotels.Count)
+            {
+                OutputHandling.Error("Invalid hotel ID!");
+            }
+
+            else
+            {
+                OutputHandling.Message($"{hotels[hotelNumber-1].Name} has been removed successfully", ConsoleColor.Green);
+                hotels.Remove(hotels[hotelNumber-1]);
+            }
+
+            Program.MainMenu(hotels);
         }
 
         public static void FindRoom(List<Hotel> hotels)
@@ -54,7 +77,7 @@ namespace HotelApp.Classes
             }
 
             OutputHandling.Message($"We found {roomcount} rooms that match your criteria!", ConsoleColor.Green);
-            // code below to add to a function
+            // ENCAPSULATE THIS
             OutputHandling.Message("Press any key to return to the main menu...", ConsoleColor.Green);
             Console.ReadKey();
             Console.Clear();
