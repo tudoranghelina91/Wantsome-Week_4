@@ -11,10 +11,12 @@ namespace PizzaApp
     {
         static void Main(string[] args)
         {
+            // create pizza base objects
             PizzaBase regular = new PizzaBase("Regular", 1);
             PizzaBase thick = new PizzaBase("Thick", 1);
             PizzaBase italian = new PizzaBase("Italian", 1);
-
+            
+            // instantiate pizza objects
             Pizza pizza1 = new Pizza("Magiunata", thick);
             Pizza pizza2 = new Pizza("Manelista", regular);
             Pizza pizza3 = new Pizza("Campeneasca", italian);
