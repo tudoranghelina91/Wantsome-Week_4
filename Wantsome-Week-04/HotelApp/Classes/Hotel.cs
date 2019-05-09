@@ -12,32 +12,33 @@ namespace HotelApp.Classes
     {
         public string Name { get; set; }
         public string City { get; set; }
-        public Room[] Rooms { get; set; }
+        public List<Room> Rooms { get; set; } = new List<Room>();
 
-        string name;
-        string city;
-        Room[] rooms;
+        public Hotel(string name, string city)
+        {
+            Name = name;
+            City = city;
+        }
 
         public decimal GetPriceForNumberOfRooms(int numberOfRooms)
         {
             decimal total = 0m;
-            foreach (Room room in rooms)
+            foreach (Room room in Rooms)
             {
-                total += room.Rate;
+                total += room.Price;
             }
 
-            // TODO calculations
             return total;
         }
 
         public void Print()
         {
-            OutputHandling.Message($"Name: {this.name}");
-            OutputHandling.Message($"City: {this.name}");
+            OutputHandling.Message($"Hotel Name: {Name}");
+            OutputHandling.Message($"City: {City}");
             OutputHandling.Message("Rooms");
             OutputHandling.Message("=====");
 
-            foreach (Room room in rooms)
+            foreach (Room room in Rooms)
             {
                 room.Print();
                 Console.WriteLine();

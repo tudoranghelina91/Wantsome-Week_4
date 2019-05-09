@@ -7,9 +7,14 @@ using System.Globalization;
 
 namespace HotelApp.Classes
 {
-    class Rate
+    public class Rate
     {
-        static decimal rate;
-        string price = rate.ToString("C2", CultureInfo.CurrentCulture);
+        public string price = "";
+
+        public Rate(decimal cost)
+        {
+            price = cost.ToString("C2", CultureInfo.CurrentCulture);
+        }
+
     }
 }

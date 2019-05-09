@@ -44,8 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Hotel.cs" />
+    <Compile Include="Classes\HotelDatabaseOperations.cs" />
+    <Compile Include="Classes\HotelInputHandling.cs" />
     <Compile Include="Classes\Rate.cs" />
     <Compile Include="Classes\Room.cs" />
+    <Compile Include="Classes\RoomInputHandling.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

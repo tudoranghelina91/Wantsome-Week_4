@@ -9,27 +9,32 @@ namespace HotelApp.Classes
 {
     public class Room
     {
+
+        public decimal Price { get; set; }
         public string Name { get; set; }
-        public decimal Rate { get; set; }
         public int Adults { get; set; }
         public int Children { get; set; }
+        public Rate rate { get; set; }
 
-        string name;
-        decimal rate;
-        int adults;
-        int children;
-
+        public Room(decimal price, string name, int adults, int children)
+        {
+            Price = price;
+            Name = name;
+            Adults = adults;
+            Children = children;
+            rate = new Rate(price);
+        }
         decimal GetPricesForDays(int numberOfDays)
         {
-            return numberOfDays * rate;
+            return numberOfDays * Price;
         }
 
         public void Print()
         {
-            OutputHandling.Message($"Name: {this.name}");
-            OutputHandling.Message($"Rate: {this.rate}");
-            OutputHandling.Message($"Adults: {this.adults}");
-            OutputHandling.Message($"Children: {this.children}");
+            OutputHandling.Message($"Room Name: {Name}");
+            OutputHandling.Message($"Rate: {rate.price}");
+            OutputHandling.Message($"Adults: {Adults}");
+            OutputHandling.Message($"Children: {Children}");
         }
     }
 }

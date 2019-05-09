@@ -129,7 +129,7 @@ namespace Wantsome_Week_04.Handlers
             }
         }
 
-        public static int ReadValue(string message)
+        public static int ReadValue(string message, string errorMessage = "Invalid input")
         {
             try
             {
@@ -141,8 +141,16 @@ namespace Wantsome_Week_04.Handlers
             catch
             {
                 OutputHandling.Error("Invalid input value! Must be an integer!");
-                return ReadValue(message);
+                return ReadValue(message, errorMessage);
             }
+        }
+
+        public static string ReadString(string message = "", string errorMessage = "", bool mandatory = true)
+        {
+            OutputHandling.Message(message, newLine: false);
+            string inputString = Console.ReadLine();
+
+            return inputString;
         }
 
         public static decimal ReadValueD(string message)
