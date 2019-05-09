@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelApp", "HotelApp\HotelA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaApp", "PizzaApp\PizzaApp.csproj", "{EEC0C904-0EA2-498E-8A36-815752E98308}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik Defining Classes", "Telerik Defining Classes\Telerik Defining Classes.csproj", "{6A4B978A-66F5-433A-A389-6C64B8907141}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{EEC0C904-0EA2-498E-8A36-815752E98308}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEC0C904-0EA2-498E-8A36-815752E98308}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEC0C904-0EA2-498E-8A36-815752E98308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A4B978A-66F5-433A-A389-6C64B8907141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4B978A-66F5-433A-A389-6C64B8907141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4B978A-66F5-433A-A389-6C64B8907141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4B978A-66F5-433A-A389-6C64B8907141}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
