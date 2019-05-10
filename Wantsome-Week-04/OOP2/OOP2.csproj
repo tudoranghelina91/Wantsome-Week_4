@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{290C9C76-51FA-4EC6-BCAF-329BCB083039}</ProjectGuid>
+    <ProjectGuid>{48809952-2A1C-4AD2-8990-645133FD20E6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OOP</RootNamespace>
-    <AssemblyName>OOP</AssemblyName>
+    <RootNamespace>OOP2</RootNamespace>
+    <AssemblyName>OOP2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,16 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Dog.cs" />
-    <Compile Include="Classes\Human.cs" />
-    <Compile Include="Classes\Masina.cs" />
-    <Compile Include="Classes\Motor.cs" />
-    <Compile Include="Point.cs" />
+    <Compile Include="StaffMembers\Employee.cs" />
+    <Compile Include="StaffMembers\Manager.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="StaffMembers\Programmer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

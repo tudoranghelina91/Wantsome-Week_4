@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaApp", "PizzaApp\PizzaA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telerik Defining Classes", "Telerik Defining Classes\Telerik Defining Classes.csproj", "{6A4B978A-66F5-433A-A389-6C64B8907141}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP2", "OOP2\OOP2.csproj", "{48809952-2A1C-4AD2-8990-645133FD20E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6A4B978A-66F5-433A-A389-6C64B8907141}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A4B978A-66F5-433A-A389-6C64B8907141}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A4B978A-66F5-433A-A389-6C64B8907141}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48809952-2A1C-4AD2-8990-645133FD20E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48809952-2A1C-4AD2-8990-645133FD20E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48809952-2A1C-4AD2-8990-645133FD20E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48809952-2A1C-4AD2-8990-645133FD20E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
