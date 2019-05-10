@@ -37,8 +37,6 @@ namespace HotelApp.Classes.AppHandling
             else if (cki.Key.Equals(ConsoleKey.D4))
             {
                 ProgramFlowHandling.Exit("Thank you for using Hotel Administration App");
-                Console.ReadKey();
-                return;
             }
 
             else

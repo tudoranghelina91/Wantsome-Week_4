@@ -20,7 +20,7 @@ namespace HotelApp.Classes
             City = city;
         }
 
-        public decimal GetPriceForNumberOfRooms(int numberOfRooms)
+        decimal GetPriceForNumberOfRooms(int numberOfRooms)
         {
             decimal total = 0m;
             foreach (Room room in Rooms)

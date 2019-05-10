@@ -15,6 +15,7 @@ namespace HotelApp.Classes
         public int Adults { get; set; }
         public int Children { get; set; }
         public Rate rate { get; set; }
+        public bool Booked { get; set; } = false;
 
         public Room(decimal price, string name, int adults, int children)
         {
