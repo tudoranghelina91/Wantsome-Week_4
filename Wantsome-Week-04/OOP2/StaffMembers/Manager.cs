@@ -4,7 +4,7 @@ namespace OOP2.StaffMembers
 {
     public class Manager : Employee
     {
-        public Manager(string firstName, string lastName) : base(firstName)
+        public Manager(string firstName, string lastName)
         {
             FirstName = firstName;
             LastName = lastName;
