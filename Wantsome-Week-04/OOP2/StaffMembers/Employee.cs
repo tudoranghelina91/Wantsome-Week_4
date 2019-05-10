@@ -7,6 +7,11 @@ namespace OOP2.StaffMembers
     {
         protected string FirstName { get; set; }
         protected string LastName { get; set; }
+
+        protected Employee(string test)
+        {
+            Console.WriteLine(test);
+        }
        
         protected void Print()
         {
