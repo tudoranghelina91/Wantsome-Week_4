@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DriverProgramClasses\DriverMenuInput.cs" />
+    <Compile Include="DriverProgramClasses\DriverMenuOutput.cs" />
+    <Compile Include="DriverProgramClasses\DriverStackOperations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stack.cs" />
@@ -50,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wantsome-Week-04\Wantsome-Week-04.csproj">
+      <Project>{a14d48ba-4026-4582-9116-51df0604a129}</Project>
+      <Name>Wantsome-Week-04</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

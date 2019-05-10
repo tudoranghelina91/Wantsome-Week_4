@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StackImplementation.DriverProgramClasses;
+using Wantsome_Week_04.Handlers;
 
 namespace StackImplementation
 {
@@ -10,13 +12,9 @@ namespace StackImplementation
     {
         static void Main(string[] args)
         {
+            OutputHandling.Message("This is a driver program to test the functionality of the stack");
             Stack stack = new Stack();
-
-            stack.Push(1);
-            stack.Push(2);
-            stack.Push(3);
-            stack.Print();
-            Console.ReadKey();
+            DriverMenuOutput.PrintMenu(stack);
         }
     }
 }
