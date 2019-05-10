@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tema 4,2", "Tema 4,2", "{62
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueImplementation", "QueueImplementation\QueueImplementation.csproj", "{8FA2380A-8BB1-433A-B3CD-EB8CAFBD7F36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackImplementation", "StackImplementation\StackImplementation.csproj", "{3617C5DD-CFB7-46E9-9D35-7F356118B750}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{8FA2380A-8BB1-433A-B3CD-EB8CAFBD7F36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FA2380A-8BB1-433A-B3CD-EB8CAFBD7F36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FA2380A-8BB1-433A-B3CD-EB8CAFBD7F36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3617C5DD-CFB7-46E9-9D35-7F356118B750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3617C5DD-CFB7-46E9-9D35-7F356118B750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3617C5DD-CFB7-46E9-9D35-7F356118B750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3617C5DD-CFB7-46E9-9D35-7F356118B750}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{EEC0C904-0EA2-498E-8A36-815752E98308} = {B2BA5006-C21D-47E5-9C1E-5EADDD2EB65B}
 		{6A4B978A-66F5-433A-A389-6C64B8907141} = {B2BA5006-C21D-47E5-9C1E-5EADDD2EB65B}
 		{8FA2380A-8BB1-433A-B3CD-EB8CAFBD7F36} = {62C6665D-7AF1-4905-A6D8-F2A5651048E4}
+		{3617C5DD-CFB7-46E9-9D35-7F356118B750} = {62C6665D-7AF1-4905-A6D8-F2A5651048E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {754E1F56-B9CA-42A2-8B41-3E5D134CEB45}
