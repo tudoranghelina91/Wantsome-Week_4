@@ -46,8 +46,12 @@
     <Compile Include="Classes\Human.cs" />
     <Compile Include="Classes\Student.cs" />
     <Compile Include="Classes\Worker.cs" />
+    <Compile Include="OutputHandling.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sorting.cs" />
+    <Compile Include="Structs\WorkerStructs.cs" />
+    <Compile Include="Structs\StudentStructs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
