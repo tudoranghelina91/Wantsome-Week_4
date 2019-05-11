@@ -11,6 +11,9 @@ namespace StudentsAndWorkers
     {
         static void Main(string[] args)
         {
+            const string WORKER = "StudentsAndWorkers.Classes.Worker";
+            const string STUDENT = "StudentsAndWorkers.Classes.Student";
+
             List<Student> students = new List<Student>() {
                 new Student("Andrei", "Gorunu", 9.70f),
                 new Student("Marian", "Dumitrescu", 5.43f),
@@ -69,13 +72,13 @@ namespace StudentsAndWorkers
 
             foreach (Human human in humanSortedLastName)
             {
-                if (human.ToString() == "StudentsAndWorkers.Classes.Worker")
+                if (human.ToString() == WORKER)
                 {
                     Worker tempWorker = (Worker)human;
                     tempWorker.PrintWorker();
                 }
 
-                if (human.ToString() == "StudentsAndWorkers.Classes.Student")
+                if (human.ToString() == STUDENT)
                 {
                     Student tempStudent = (Student)human;
                     tempStudent.PrintStudent();
