@@ -13,31 +13,26 @@ namespace PizzaApp.Classes
         public string PizzaName { get; set; }
         public PizzaBase Base { get; set; }
         public List<PizzaTopping> Toppings { get; set; } = new List<PizzaTopping>();
-        decimal totalCost = 0;
-        string TotalCost = "";
+        public decimal Cost { get; set; }
 
 
-        public Pizza(string name, PizzaBase pizzaBase)
+        public Pizza(string name, int pizzaBaseName, decimal cost)
         {
-            Base = pizzaBase;
+            Base = new PizzaBase(pizzaBaseName, cost);
             PizzaName = name;
+            CalculateTotalCost(Base.Cost);
         }
 
         public void AddTopping(string toppingName, decimal cost)
         {
             PizzaTopping newTopping = new PizzaTopping(toppingName, cost);
             Toppings.Add(newTopping);
+            CalculateTotalCost(cost);
         }
 
-        public void CalculateTotalCost()
+        public void CalculateTotalCost(decimal cost)
         {
-            foreach (PizzaTopping topping in Toppings)
-            {
-                totalCost += topping.Cost;
-            }
-
-            totalCost += Base.Cost;
-            TotalCost = totalCost.ToString("C2", CultureInfo.CurrentCulture);
+            Cost += cost;
         }
 
         public void Print()
@@ -52,7 +47,7 @@ namespace PizzaApp.Classes
                 topping.Print();
             }
 
-            OutputHandling.Message($"Total Cost: {TotalCost}");
+            OutputHandling.Message($"Total Cost: {Cost.ToString("C", CultureInfo.CurrentCulture)}");
             Console.WriteLine();
         }
     }

@@ -13,18 +13,16 @@ namespace PizzaApp.Classes
 
         public string Name { get; set; }
         public decimal Cost { get; set; }
-        string price = "";
 
         public PizzaTopping(string name, decimal cost)
         {
             Name = name;
             Cost = cost;
-            price = Cost.ToString("C2", CultureInfo.CurrentCulture);
         }
 
         public void Print()
         {
-            OutputHandling.Message($"{Name} ({price})");
+            OutputHandling.Message($"{Name} ({Cost.ToString("C", CultureInfo.CurrentCulture)})");
         }
     }
 }

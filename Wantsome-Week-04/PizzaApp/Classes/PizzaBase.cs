@@ -10,20 +10,33 @@ namespace PizzaApp.Classes
 {
     public class PizzaBase
     {
-        string Name { get; set; }
+        enum Name { Regular, Thick, Italian}
         public decimal Cost { get; set; }
-        string price = "";
+        public int name;
 
-        public PizzaBase(string name, decimal cost)
+        public PizzaBase(int name, decimal cost)
         {
-            Name = name;
-            Cost = (Name != "Italian") ? cost : cost * 1.5m;
-            price = Cost.ToString("C2", CultureInfo.CurrentCulture);
+       
+            Cost = (name != (int)Name.Italian) ? cost : cost * 1.5m;
+            this.name = name;
         }
 
         public void Print()
         {
-            OutputHandling.Message($"{Name} ({price})");
+            if (name == 0)
+            {
+                OutputHandling.Message($"{Name.Regular} ({Cost.ToString("C", CultureInfo.CurrentCulture)})");
+            }
+
+            else if (name == 1)
+            {
+                OutputHandling.Message($"{Name.Thick} ({Cost.ToString("C", CultureInfo.CurrentCulture)})");
+            }
+
+            else
+            {
+                OutputHandling.Message($"{Name.Italian} ({Cost.ToString("C", CultureInfo.CurrentCulture)})");
+            }
         }
     }
 }
